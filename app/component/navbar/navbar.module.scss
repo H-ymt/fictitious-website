@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.contactList {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.gnavList {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  gap: 0.5rem;
+  padding-right: 1rem;
+}
+
+.gnavItem {
+  display: flex;
+  align-items: center;
+
+  &::before {
+    display: inline-block;
+    content: "・";
+    font-size: 24px;
+    color: var(--color-orange);
+  }
+}
