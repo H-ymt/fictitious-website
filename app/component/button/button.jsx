@@ -1,13 +1,10 @@
 import React from "react";
-import styles from "./button.module.scss";
-import Link from "next/link";
+import styles from "./Button.module.scss";
 
-const Button = ({ href, text }) => {
-  return (
-    <Link href={href}>
-      <button className={styles.primaryButton}>{text}</button>
-    </Link>
-  );
+export const PrimaryButton = ({ text }) => {
+  return <button className={`${styles.primaryButton} ${styles.button}`}>{text}</button>;
 };
 
-export default Button;
+export const SecondaryButton = ({ text }) => {
+  return <button className={`${styles.secondaryButton} ${styles.button}`}>{text}</button>;
+};
