@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
     <html lang="ja" className={`${montserrat.variable} ${noto_sans_jp.variable}`}>
       <body>
         <Header />
-        {children}
+        <main className="main">{children}</main>
       </body>
     </html>
   );

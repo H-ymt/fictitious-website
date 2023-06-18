@@ -12,6 +12,11 @@ body {
     font-family: var(--font-montserrat);
 }
 
+.main {
+    padding: 0 1rem;
+    min-height: 100vh;
+}
+
 img {
     max-width: 100%;
     height: auto;
