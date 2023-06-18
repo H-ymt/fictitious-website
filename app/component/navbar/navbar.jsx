@@ -2,30 +2,34 @@ import React from "react";
 import styles from "./navbar.module.scss";
 import Image from "next/image";
 import Link from "next/link";
-import Button from "../button/button";
+import { PrimaryButton, SecondaryButton } from "../button/button";
 
 const Header = () => {
   return (
     <header className={styles.header}>
       <Link href="/">
-        <Image src="/next.svg" width={100} height={20} />
+        <Image src="/next.svg" width={140} height={28} className={styles.logo} />
       </Link>
       <nav className={styles.nav}>
         <ul className={styles.contactList}>
           <li className={styles.contactTel}>
-            <Link href="/">000-0000-0000</Link>
+            <Link href="tel:000-0000-0000">
+              <SecondaryButton text="000-0000-0000" />
+            </Link>
           </li>
           <li className={styles.contactButton}>
-            <Button href="/" text="Contact" />
+            <Link href="/">
+              <PrimaryButton text="Contact" />
+            </Link>
           </li>
         </ul>
 
-        <ul className={styles.gnavList}>
+        <ul className={styles.navList}>
           <Link href="/">
-            <li className={styles.gnavItem}>Top</li>
+            <li className={styles.navItem}>Top</li>
           </Link>
           <Link href="/about">
-            <li className={styles.gnavItem}>About</li>
+            <li className={styles.navItem}>About</li>
           </Link>
         </ul>
       </nav>

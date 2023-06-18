@@ -1,9 +1,18 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Montserrat, Noto_Sans_JP } from "next/font/google";
 import Header from "./component/navbar/navbar";
 import "ress";
 
-const inter = Inter({ subsets: ["latin"] });
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  variable: "--font-montserrat",
+  display: "swap",
+});
+const noto_sans_jp = Noto_Sans_JP({
+  subsets: ["latin"],
+  variable: "--font-noto-sans-jp",
+  display: "swap",
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -12,8 +21,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="ja">
-      <body className={inter.className}>
+    <html lang="ja" className={`${montserrat.variable} ${noto_sans_jp.variable}`}>
+      <body>
         <Header />
         {children}
       </body>

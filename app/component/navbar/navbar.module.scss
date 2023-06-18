@@ -1,24 +1,84 @@
+@import "/app/mixins";
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   padding: 1rem;
+
+  @include mq(md) {
+    gap: 3rem;
+  }
+
+  @include mq(xl) {
+    max-width: var(--max-width);
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+
+  @include mq(md) {
+    width: 140px;
+    height: auto;
+  }
 }
 
 .nav {
   display: flex;
+  width: 100%;
   flex-direction: column;
   justify-content: space-between;
-  font-size: 12px;
+  font-size: 14px;
+
+  @include mq(md) {
+    flex-direction: row;
+    font-size: 16px;
+  }
 }
 
 .contactList {
   display: flex;
+  justify-content: flex-end;
   align-items: center;
   gap: 0.5rem;
+  font-size: 12px;
+
+  @include mq(md) {
+    order: 2;
+    gap: 1.5rem;
+  }
 }
 
-.gnavList {
+.contactTel button {
+  height: 28px;
+  padding: 0.5rem;
+
+  @include mq(md) {
+    font-size: 18px;
+    color: var(--color-black);
+    border: none;
+  }
+}
+
+.contactButton button {
+  width: 80px;
+  height: 28px;
+  font-weight: 500;
+
+  @include mq(md) {
+    width: 100px;
+    height: 40px;
+  }
+}
+
+.navList {
   display: flex;
   justify-content: flex-end;
   list-style-type: none;
@@ -26,7 +86,7 @@
   padding-right: 1rem;
 }
 
-.gnavItem {
+.navItem {
   display: flex;
   align-items: center;
 
