@@ -1,6 +1,6 @@
 import Link from "next/link";
 import styles from "./page.module.scss";
-import { PrimaryButton } from "./component/button/Button";
+import { PrimaryButton } from "./component/button/button";
 import Image from "next/image";
 
 export default function Home() {

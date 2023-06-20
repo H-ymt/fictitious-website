@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./navbar.module.scss";
 import Image from "next/image";
 import Link from "next/link";
-import { PrimaryButton, SecondaryButton } from "../button/Button";
+import { PrimaryButton, SecondaryButton } from "../button/button";
 
 const Header = () => {
   return (
