@@ -8,9 +8,7 @@ export default function Home() {
     <>
       <div className={styles.headContainer}>
         <div className={styles.headText}>
-          <h1 className={styles.title}>
-            ここにはタイトルが、<br></br>はいります
-          </h1>
+          <h1 className={styles.title}>This is the space for the title</h1>
           <p className={styles.textSmall}>This space is an area for text</p>
           <Link href="/about" className={styles.aboutButton}>
             <PrimaryButton text="About page" />
@@ -22,7 +20,7 @@ export default function Home() {
         </div>
       </div>
 
-      <section class={styles.section}>
+      <section className={styles.section}>
         <h2 className={styles.sectionTitle}>
           Products<span>subtitle</span>
         </h2>
@@ -87,7 +85,7 @@ export default function Home() {
                 distinctio accusantium facilis!
               </p>
 
-              <Link class={styles.moreButton} href="/about">
+              <Link className={styles.moreButton} href="/about">
                 <span>詳しくはこちら</span>
                 <PrimaryButton text="→" />
               </Link>
@@ -96,13 +94,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section class={styles.section}>
+      <section className={styles.section}>
         <h2 className={styles.sectionTitle}>
           Service<span>subtitle</span>
         </h2>
-        <p class={styles.sectionCatch}>Lorem ipsum dolor sit amet.</p>
+        <p className={styles.sectionCatch}>Lorem ipsum dolor sit amet.</p>
 
-        <div class={styles.serviceContainer}>
+        <div className={styles.serviceContainer}>
           <div className={styles.service}>
             <div className={styles.serviceLogo}>
               <Image src="/carbon_container-services.svg" width={40} height={40} loading="lazy" />
@@ -115,7 +113,7 @@ export default function Home() {
                 pariatur, voluptate autem amet ex dignissimos? Porro explicabo animi perferendis,
                 repudiandae ipsa corrupti modi! Ratione vel voluptas fugit! Quaerat!
               </p>
-              <Link class={styles.moreButton} href="/about">
+              <Link className={styles.moreButton} href="/about">
                 <span>詳しくはこちら</span>
                 <PrimaryButton text="→" />
               </Link>
@@ -179,13 +177,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section class={styles.section}>
+      <section className={styles.section}>
         <h2 className={styles.sectionTitle}>
           Works<span>subtitle</span>
         </h2>
       </section>
 
-      <section class={styles.section}>
+      <section className={styles.section}>
         <h2 className={styles.sectionTitle}>
           News<span>subtitle</span>
         </h2>
