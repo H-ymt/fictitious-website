@@ -6,8 +6,8 @@
   --color-white: #ffffff;
   --color-orange: #fa6750;
 
-  --max-width: 1024px;
-  --max-width-content: 880px;
+  --max-width: 1200px;
+  --max-width-content: 960px;
 }
 
 body {
@@ -24,7 +24,7 @@ body {
     padding-bottom: 3rem;
   }
 
-  @include mq(lg) {
+  @include mq(xl) {
     max-width: var(--max-width);
     margin-right: auto;
     margin-left: auto;
