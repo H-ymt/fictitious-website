@@ -1,4 +1,4 @@
-import "./globals.css";
+import "./globals.scss";
 import { Montserrat, Noto_Sans_JP } from "next/font/google";
 import Header from "./component/navbar/navbar";
 import "ress";
@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
     <html lang="ja" className={`${montserrat.variable} ${noto_sans_jp.variable}`}>
       <body>
         <Header />
-        {children}
+        <main className="main">{children}</main>
       </body>
     </html>
   );
