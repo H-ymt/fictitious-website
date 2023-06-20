@@ -16,7 +16,7 @@ export default function Home() {
         </div>
 
         <div className={styles.topImage}>
-          <Image src="/In_love_6sq2.png" width={933} height={694} />
+          <Image src="/In_love_6sq2.png" width={933} height={694} alt="" />
         </div>
       </div>
 
@@ -28,7 +28,13 @@ export default function Home() {
         <div className={styles.productContainer}>
           <div className={styles.product}>
             <div className={styles.productImage}>
-              <Image src="/Weather_app_re_kcb1.png" width={981} height={768} loading="lazy" />
+              <Image
+                src="/Weather_app_re_kcb1.png"
+                width={981}
+                height={768}
+                loading="lazy"
+                alt=""
+              />
             </div>
 
             <div className={styles.productBody}>
@@ -48,7 +54,7 @@ export default function Home() {
 
           <div className={styles.product}>
             <div className={styles.productImage}>
-              <Image src="/shopping_app_flsj.png" width={981} height={768} loading="lazy" />
+              <Image src="/shopping_app_flsj.png" width={981} height={768} loading="lazy" alt="" />
             </div>
 
             <div className={styles.productBody}>
@@ -69,7 +75,13 @@ export default function Home() {
 
           <div className={styles.product}>
             <div className={styles.productImage}>
-              <Image src="/product_explainer_8jbm.png" width={981} height={768} loading="lazy" />
+              <Image
+                src="/product_explainer_8jbm.png"
+                width={981}
+                height={768}
+                loading="lazy"
+                alt=""
+              />
             </div>
 
             <div className={styles.productBody}>
@@ -103,7 +115,13 @@ export default function Home() {
         <div className={styles.serviceContainer}>
           <div className={styles.service}>
             <div className={styles.serviceLogo}>
-              <Image src="/carbon_container-services.svg" width={40} height={40} loading="lazy" />
+              <Image
+                src="/carbon_container-services.svg"
+                width={40}
+                height={40}
+                loading="lazy"
+                alt=""
+              />
             </div>
 
             <div className={styles.serviceBody}>
@@ -142,7 +160,7 @@ export default function Home() {
 
           <div className={styles.service}>
             <div className={styles.serviceLogo}>
-              <Image src="/ep_service.svg" width={40} height={40} loading="lazy" />
+              <Image src="/ep_service.svg" width={40} height={40} loading="lazy" alt="" />
             </div>
 
             <div className={styles.serviceBody}>
