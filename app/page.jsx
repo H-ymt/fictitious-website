@@ -1,7 +1,7 @@
 import Link from "next/link";
-import styles from "./page.module.scss";
-import { PrimaryButton } from "./component/button/Button";
 import Image from "next/image";
+import { PrimaryButton } from "../component/Button/Button";
+import styles from "./page.module.scss";
 
 export default function Home() {
   return (
@@ -208,7 +208,7 @@ export default function Home() {
           <div className={styles.worksContainer}>
             <Image src="/in_thought_re_qyxl.png" width={891} height={859} loading="lazy" alt="" />
             <p className={styles.workNumber}>Case01</p>
-            <h3 className={styles.worksName}>Lorem ipsum dolor sit amet.</h3>
+            <h3 className={styles.worksName}>Lorem&ensp;ipsum&ensp;dolor&ensp;sit&ensp;amet.</h3>
             <p className={styles.worksText}>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi fugiat inventore sunt
               officiis dignissimos natus nesciunt aut in?
@@ -242,7 +242,7 @@ export default function Home() {
               alt=""
             />
             <p className={styles.workNumber}>Case03</p>
-            <h3 className={styles.worksName}>Lorem ipsum dolor sit amet.</h3>
+            <h3 className={styles.worksName}>Lorem&ensp;ipsum&ensp;dolor&ensp;sit&ensp;amet.</h3>
             <p className={styles.worksText}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit perspiciatis, harum
               molestiae officia optio quo delectus!
@@ -261,12 +261,6 @@ export default function Home() {
             </p>
           </div>
         </div>
-      </section>
-
-      <section className={styles.section}>
-        <h2 className={styles.sectionTitle}>
-          News<span>subtitle</span>
-        </h2>
       </section>
     </>
   );

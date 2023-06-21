@@ -216,6 +216,7 @@
 .works {
   display: flex;
   flex-direction: column;
+  gap: 2rem;
   max-width: var(--max-width-content);
   margin-right: auto;
   margin-left: auto;
