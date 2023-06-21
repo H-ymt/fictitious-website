@@ -16,7 +16,7 @@ export default function Home() {
         </div>
 
         <div className={styles.topImage}>
-          <Image src="/In_love_6sq2.png" width={933} height={694} />
+          <Image src="/In_love_6sq2.png" width={933} height={694} alt="" />
         </div>
       </div>
 
@@ -28,7 +28,13 @@ export default function Home() {
         <div className={styles.productContainer}>
           <div className={styles.product}>
             <div className={styles.productImage}>
-              <Image src="/Weather_app_re_kcb1.png" width={981} height={768} loading="lazy" />
+              <Image
+                src="/Weather_app_re_kcb1.png"
+                width={981}
+                height={768}
+                loading="lazy"
+                alt=""
+              />
             </div>
 
             <div className={styles.productBody}>
@@ -48,7 +54,7 @@ export default function Home() {
 
           <div className={styles.product}>
             <div className={styles.productImage}>
-              <Image src="/shopping_app_flsj.png" width={981} height={768} loading="lazy" />
+              <Image src="/shopping_app_flsj.png" width={981} height={768} loading="lazy" alt="" />
             </div>
 
             <div className={styles.productBody}>
@@ -69,7 +75,13 @@ export default function Home() {
 
           <div className={styles.product}>
             <div className={styles.productImage}>
-              <Image src="/product_explainer_8jbm.png" width={981} height={768} loading="lazy" />
+              <Image
+                src="/product_explainer_8jbm.png"
+                width={981}
+                height={768}
+                loading="lazy"
+                alt=""
+              />
             </div>
 
             <div className={styles.productBody}>
@@ -103,7 +115,13 @@ export default function Home() {
         <div className={styles.serviceContainer}>
           <div className={styles.service}>
             <div className={styles.serviceLogo}>
-              <Image src="/carbon_container-services.svg" width={40} height={40} loading="lazy" />
+              <Image
+                src="/carbon_container-services.svg"
+                width={40}
+                height={40}
+                loading="lazy"
+                alt=""
+              />
             </div>
 
             <div className={styles.serviceBody}>
@@ -142,7 +160,7 @@ export default function Home() {
 
           <div className={styles.service}>
             <div className={styles.serviceLogo}>
-              <Image src="/ep_service.svg" width={40} height={40} loading="lazy" />
+              <Image src="/ep_service.svg" width={40} height={40} loading="lazy" alt="" />
             </div>
 
             <div className={styles.serviceBody}>
@@ -181,6 +199,68 @@ export default function Home() {
         <h2 className={styles.sectionTitle}>
           Works<span>subtitle</span>
         </h2>
+
+        <p className={styles.sectionCatch}>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        </p>
+
+        <div className={styles.works}>
+          <div className={styles.worksContainer}>
+            <Image src="/in_thought_re_qyxl.png" width={891} height={859} loading="lazy" alt="" />
+            <p className={styles.workNumber}>Case01</p>
+            <h3 className={styles.worksName}>Lorem ipsum dolor sit amet.</h3>
+            <p className={styles.worksText}>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi fugiat inventore sunt
+              officiis dignissimos natus nesciunt aut in?
+            </p>
+          </div>
+
+          <div className={styles.worksContainer}>
+            <Image
+              src="/Work_in_progress_re_byic.png"
+              width={891}
+              height={859}
+              loading="lazy"
+              alt=""
+            />
+            <p className={styles.workNumber}>Case02</p>
+            <h3 className={styles.worksName}>
+              Lorem&ensp;ipsum&ensp;dolor&ensp;sit&ensp;amet&ensp;consectetur&ensp;adipisicing&ensp;elit.
+            </h3>
+            <p className={styles.worksText}>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem consectetur quam dolore
+              eum impedit a odio doloremque, quos, fugit earum, aliquam quaerat.
+            </p>
+          </div>
+
+          <div className={styles.worksContainer}>
+            <Image
+              src="/Working_remotely_re_6b3a.png"
+              width={891}
+              height={859}
+              loading="lazy"
+              alt=""
+            />
+            <p className={styles.workNumber}>Case03</p>
+            <h3 className={styles.worksName}>Lorem ipsum dolor sit amet.</h3>
+            <p className={styles.worksText}>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit perspiciatis, harum
+              molestiae officia optio quo delectus!
+            </p>
+          </div>
+
+          <div className={styles.worksContainer}>
+            <Image src="/Working_out_re_nhkg.png" width={891} height={859} loading="lazy" alt="" />
+            <p className={styles.workNumber}>Case04</p>
+            <h3 className={styles.worksName}>
+              Lorem&ensp;ipsum&ensp;dolor&ensp;sit&ensp;amet&ensp;consectetur&ensp;adipisicing&ensp;elit.
+            </h3>
+            <p className={styles.worksText}>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem consectetur quam dolore
+              eum impedit a odio doloremque, quos, fugit earum, aliquam quaerat.
+            </p>
+          </div>
+        </div>
       </section>
 
       <section className={styles.section}>
