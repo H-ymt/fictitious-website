@@ -2,6 +2,7 @@
 // TOC
 // ## Product section
 // ## Service section
+// ## Works section
 
 .headContainer {
   @include mq(sm) {
@@ -209,4 +210,52 @@
   height: 22px;
   padding: 0;
   font-size: 12px;
+}
+
+// ## Works section
+.works {
+  display: flex;
+  flex-direction: column;
+  max-width: var(--max-width-content);
+  margin-right: auto;
+  margin-left: auto;
+
+  @include mq(sm) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+}
+
+.worksContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  background: #fff;
+  border: 1px solid rgba(226, 221, 221, 0.6549019608);
+  border-radius: 24px;
+
+  @include mq(sm) {
+    width: calc((100% - 2rem * 1) / 2);
+  }
+
+  @include mq(lg) {
+    width: calc((100% - 2rem * 2) / 3);
+  }
+}
+
+.worksContainer img {
+  @include mq(sm) {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    object-position: 0% 15%;
+  }
+}
+
+.workNumber {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--color-orange);
 }
