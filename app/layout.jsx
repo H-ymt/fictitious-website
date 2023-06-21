@@ -1,6 +1,6 @@
 import "./globals.scss";
 import { Montserrat, Noto_Sans_JP } from "next/font/google";
-import Header from "./component/navbar/navbar";
+import Header from "../component/Navbar/navbar";
 import "ress";
 
 const montserrat = Montserrat({
